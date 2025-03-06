@@ -5,7 +5,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { FIREBASE_AUTH } from '../../firebaseconfig';
 import { useUser } from '@/utils/UserContext';
 import { ProgressBar } from 'react-native-paper';
-
 const MainPage = ({ navigation }: any) => {
   function getTodayDay() {
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

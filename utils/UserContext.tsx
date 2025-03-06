@@ -64,7 +64,7 @@ export const UserProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const fetchUserData = async (uid: string) => {
     try {
       // Replace with your API call logic
-      const response = await fetch(`http://172.20.10.2:5001/user/${uid}`);
+      const response = await fetch(`http://192.168.1.3:5001/user/${uid}`);
       const data: UserData = await response.json();
      
       setUser(data);

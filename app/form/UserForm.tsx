@@ -63,7 +63,7 @@ const FormScreen = ({ navigation, route }: any) => {
       setLoading(true);
       console.log(userData)
       try {
-        const response = await axios.post('http://172.20.10.2:5001/register', userData);
+        const response = await axios.post('http://192.168.1.3:5001/register', userData);
         console.log("API Response:", response.data);// Log API response
         await fetchUserData(uid);
         navigation.dispatch(
